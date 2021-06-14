@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <title>Calculadora 2</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Calculadora</h1>
+        <input readonly class="painel" data-screen>
+        <div class="calc">
+            <input type="button" value="1" data-number>
+            <input type="button" value="2" data-number>
+            <input type="button" value="3" data-number>
+            <input type="button" value="+" data-operator>
+            <input type="button" value="4" data-number>
+            <input type="button" value="5" data-number>
+            <input type="button" value="6" data-number>
+            <input type="button" value="-" data-operator>
+            <input type="button" value="7" data-number>
+            <input type="button" value="8" data-number>
+            <input type="button" value="9" data-number>
+            <input type="button" value="*" data-operator>
+            <input type="button" value="0" data-number>
+            <input type="button" value="." data-number>
+            <input type="button" value="CE" onclick="clearScreen()">
+            <input type="button" value="/" data-operator>
+            <input type="button" value="=" onclick="result()" class="input-result">
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
