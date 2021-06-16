@@ -1,20 +1,19 @@
 const screen = document.querySelector('[data-screen]')
+screen.value = "0"
 
-const arrayData = document.querySelectorAll('[data-number]')
-arrayData.forEach((buttonNumber)=>{
-    buttonNumber.addEventListener('click', ()=>{
-        render(buttonNumber.value)} )
-})
-
-const arrayOperator = document.querySelectorAll('[data-operator]')
-arrayOperator.forEach((buttonOperator)=>{
-    buttonOperator.addEventListener('click', ()=>{
-        render(buttonOperator.value)
+const arrayButton = document.querySelectorAll('[data-button]')
+arrayButton.forEach((dataButton)=>{
+    dataButton.addEventListener('click', ()=>{
+        render(dataButton.value)
     })
 })
 
 function render(data){
-    screen.value += data
+    if(screen.value == "0"){
+        screen.value = data
+    }else{
+        screen.value += data
+    }
 }
 function result(){
     if (screen.value == ""){
@@ -26,5 +25,5 @@ function result(){
 }
 
 function clearScreen(){
-    screen.value = ""
+    screen.value = "0"
 }
