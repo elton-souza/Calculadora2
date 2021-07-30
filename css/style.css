@@ -20,10 +20,24 @@ h1{
     font-size: 25px;
     margin-top: 10px;
 }
+.bloco-botoes{
+    display: flex;
+    align-items: center;
+}
 .painel{
     background-color:#444343;
     margin: 15px 0;
-    width:343px;
+    width:295px;
+    cursor:initial;
+}
+.btn-clear{
+    width: 40px;
+    height: 60px;
+    margin-left: 5px;
+    background-color: white;
+    background-image: url('../delete.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .calc{
     width: 410px;

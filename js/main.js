@@ -24,6 +24,8 @@ function result(){
     }
 }
 
-function clearScreen(){
-    screen.value = "0"
+function clearLastNumber(){
+    const text = screen.value
+    const newText = text.slice(0,text.length-1)
+    screen.value = newText
 }
